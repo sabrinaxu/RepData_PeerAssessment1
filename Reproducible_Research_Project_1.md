@@ -97,6 +97,9 @@ The difference is displayed in the line plot below.
 
 
     library(ggplot2)
+
+    ## Warning: package 'ggplot2' was built under R version 3.4.3
+
     ggplot(data=steps_by_interval_i,aes(x=interval, y=steps, group = dow))+
     geom_line(position = position_dodge(), aes(colour=dow))
 
